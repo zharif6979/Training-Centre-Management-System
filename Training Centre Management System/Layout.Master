@@ -1,0 +1,114 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Layout.master.cs" Inherits="Training_Centre_Management_System.Layout" %>
+
+<!DOCTYPE html>
+
+<html>
+ <head runat="server">
+    <title>NUR ECO RESORT GROUP
+    </title>
+    <%--bootstrap css--%>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <%--datatables css--%>
+    <link href="datatables/css/jquery.dataTables.min.css" rel="stylesheet" />
+    <%--fontawesome css--%>
+    <link href="fontawesome/css/all.css" rel="stylesheet" />
+
+    <script src="bootstrap/js/jquery-3.5.1.slim.min.js"></script>
+    <script src="bootstrap/js/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+     <style type="text/css">
+         .auto-style1 {
+             margin-bottom: 0px;
+         }
+     </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    
+    
+        <div>
+            <nav class="navbar navbar-expand-lg navbar-light" style="background-color:forestgreen;">
+               <div class="auto-style1"><a href="home.aspx" title="NUR ECO RESORT GROUP"  class="title-normal" style="font-family: 'Bodoni MT'; font-size: 30px; font-weight: lighter; color: white; font-style: italic">NUR ECO RESORT GROUP</a>
+                 <p style="margin:0px; color:white;" class="description">"Dekat di mata, Lekat di hati"</p>
+               </div>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+               
+            
+          
+                    
+       
+                        <div style="margin-top:30px;" class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="home.aspx" style="color:white;">HOME <span class="sr-only">(current)</span></a>
+                                </li>&nbsp&nbsp
+                                <li class="nav-item">
+                                    <a class="nav-link" href="about.aspx" style="color:white;">ABOUT</a>
+                                </li>&nbsp&nbsp
+                                <li class="nav-item">
+                                    <a class="nav-link" href="Packages.aspx" style="color:white;">PACKAGE</a>
+                                </li>&nbsp&nbsp
+                                <li class="nav-item">
+                                    <a class="nav-link" href="gallery.aspx" style="color:white;">GALLERY</a>
+                                </li>&nbsp&nbsp
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contactUs.aspx" style="color:white;">CONTACT</a>
+                                </li>
+                            </ul>
+
+                            <ul class="navbar-nav">
+                                <li>
+                                    <asp:ImageButton ID="ImageButton1" runat="server" Height="30px" ImageUrl="image/shopping-app-icon-4.jpg" Width="60px" OnClick="ImageButton1_Click" Visible="False" />
+                                </li><br /><br />
+                                <li class="nav-item active">
+                                   <asp:LinkButton class="nav-link" ID="LinkButton2" runat="server"  ForeColor="White" OnClick="LinkButton2_Click">UserLogin</asp:LinkButton>
+                                </li>
+                                <li class="nav-item active">
+                                   <asp:LinkButton class="nav-link" ID="LinkButton4" runat="server"  ForeColor="White" OnClick="LinkButton4_Click">Sign Up</asp:LinkButton>
+                                </li>
+                                <li class="nav-item active">
+                                   <asp:LinkButton class="nav-link" ID="LinkButton5" runat="server"  ForeColor="White" Visible="False" OnClick="LinkButton5_Click">LogOut</asp:LinkButton>
+                                </li>
+                                <li class="nav-item active">
+                                    <asp:LinkButton class="nav-link" ID="LinkButton6" runat="server"  ForeColor="White" Visible="False">Hello user</asp:LinkButton>
+                                </li>
+                            </ul>
+                    
+                        </div>
+                    </nav>
+  
+                    </div>
+                         
+                    
+            
+           <div>
+               <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+           </div>
+
+   
+   
+  <div id="footer1" class="container-fluid">
+      <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+              <p style="background-color:lawngreen;">
+                  <asp:LinkButton ID="LinkButton3" runat="server" ForeColor="Black" OnClick="LinkButton3_Click">Admin Login</asp:LinkButton>&nbsp;&nbsp;
+                  <asp:LinkButton ID="LinkButton7" runat="server"  ForeColor="Black" Visible="false" OnClick="LinkButton7_Click">Add Package</asp:LinkButton>&nbsp;&nbsp;
+                  <asp:LinkButton ID="LinkButton9" runat="server"  ForeColor="Black" Visible="false" OnClick="LinkButton9_Click">Delete Package</asp:LinkButton>&nbsp;&nbsp;
+                  <asp:LinkButton ID="LinkButton10" runat="server" ForeColor="Black" Visible="false" OnClick="LinkButton10_Click">Report</asp:LinkButton>
+              </p>
+              <p style="color: #FFFFFF; background-color:forestgreen;">
+    Copyright © 2019 Nur Eco Resort. All rights reserved.</p>
+          </div>
+      </div>
+  </div>      
+        </form>
+    
+    </body>
+    </html>
+    
+        
+        
+  
